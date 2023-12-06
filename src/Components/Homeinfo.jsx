@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import { ImPointRight } from "react-icons/im";
 
 const InfoBox = ({ text, link, btnText }) => (
   <div className="info-box">
     <p className="font-medium sm:text-xl text-center">{text}</p>
     <Link to={link} className="neo-brutalism-white neo-btn">
       {btnText}
+      <ImPointRight />
     </Link>
   </div>
 );
@@ -25,8 +27,24 @@ const renderContent = {
       />
     </h1>
   ),
-  3: <h1>3</h1>,
-  4: <h1>4</h1>,
+  3: (
+    <h1>
+      <InfoBox
+        text="Led multiple projects to succes over the years. Curious about the impact?"
+        link="/projects"
+        btnText="Visit my portfolio"
+      />
+    </h1>
+  ),
+  4: (
+    <h1>
+      <InfoBox
+        text="Need a project done or looking for a dev? I'm just a few keystrokes away"
+        link="/contact"
+        btnText="Let's talk"
+      />
+    </h1>
+  ),
 };
 
 const Homeinfo = ({ currentStage }) => {

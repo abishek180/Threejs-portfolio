@@ -27,9 +27,9 @@ body:has(.card[data-color="green"]:hover) {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
 
-  .head-text {
+  /* .head-text {
     @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
-  }
+  } */
 
   .subhead-text {
     @apply font-semibold sm:text-3xl text-xl relative font-poppins;
@@ -44,7 +44,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .textarea {
-    @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card;
+    @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow;
   }
 
   .btn {
