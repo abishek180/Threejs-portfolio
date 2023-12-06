@@ -69,8 +69,8 @@ const [currentStage, setCurrentStage] =useState(1);
             setCurrentStage={setCurrentStage}/>
             <Plane 
             isRotating={isRotating}
-            planeScale={planeScale}
-            planePosition={planePosition}
+            scale={planeScale}
+            position={planePosition}
             rotation={[0,20,0]}/>
           </Suspense>
         </Canvas>
